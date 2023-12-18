@@ -2,9 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var submitButton = document.getElementById('submitBtn');
   
     submitButton.addEventListener('click', function () {
-        
-  
-      // Gọi hàm JavaScript với giá trị từ dropdown
+
       submitForm();
     });
   
@@ -12,12 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function submitForm() {
     var dayValue = parseInt(document.getElementById('dayDropdown').value,10);
     var timeValue = parseInt(document.getElementById('timeDropdown').value,10);
-      console.log('Selected day:', dayValue);
-      console.log('Selected time:', timeValue);
+      console.log('Ngày:', dayValue);
+      console.log('Thời gian:', timeValue);
   
-    
     var day = 0;
     var time = 0;
+
     switch (dayValue) {
       case 1:
         day = 2;
@@ -70,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Chọn lại đê');
     }
 
-    // Tạo URL dựa trên giá trị từ dropdown
+    
     var url = '/ajax/register/actionclassbydate?day=' + day + '&time=' + time;
 
     // Mở dialog
