@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var url = '/ajax/register/actionclassbydate?day=' + day + '&time=' + time;
 
     // Mở dialog
-    //kPortal.OpenDialog(url, 99, 70, 0, 1);
+    kPortal.OpenDialog(url, 99, 70, 0, 1);
 
     // In thông báo vào console (tùy chọn)
     console.log('Dialog opened with URL:', url);
