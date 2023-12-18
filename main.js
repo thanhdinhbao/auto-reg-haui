@@ -5,11 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
         
   
       // Gọi hàm JavaScript với giá trị từ dropdown
-      executeFunction();
+      submitForm();
     });
   
     // Hàm JavaScript sẽ được gọi khi nhấn nút submit
-    function executeFunction() {
+    function submitForm() {
     var dayValue = parseInt(document.getElementById('dayDropdown').value,10);
     var timeValue = parseInt(document.getElementById('timeDropdown').value,10);
       console.log('Selected day:', dayValue);
