@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       submitForm();
     });
-  
-    // Hàm JavaScript sẽ được gọi khi nhấn nút submit
-    function submitForm() {
+
+  // Hàm JavaScript sẽ được gọi khi nhấn nút submit
+  function submitForm() {
     var dayValue = parseInt(document.getElementById('dayDropdown').value,10);
     var timeValue = parseInt(document.getElementById('timeDropdown').value,10);
-      console.log('Ngày:', dayValue);
+      console.log('Thứ :', dayValue + 1);
       console.log('Thời gian:', timeValue);
   
     var day = 0;
@@ -72,10 +72,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var url = '/ajax/register/actionclassbydate?day=' + day + '&time=' + time;
 
     // Mở dialog
-    kPortal.OpenDialog(url, 99, 70, 0, 1);
+    //kPortal.OpenDialog(url, 99, 70, 0, 1);
 
     // In thông báo vào console (tùy chọn)
     console.log('Dialog opened with URL:', url);
-    }
+      }
+
   });
+
+
+
   
